@@ -1,0 +1,95 @@
+#include<stdio.h>
+ 
+ int main()
+ {
+     int marks;
+     char grade;
+     
+    printf("please enter your marks\n");
+    scanf("%d",&marks);
+     
+     
+         (marks >=90 && marks<=100)?grade='A': 	
+	     (marks >=75 && marks<=89)?grade='B':
+	     (marks>=60 && marks<=74)?grade='C':
+        (marks>=50 && marks<=59)?grade='D':
+	    (marks>=35 && marks<=49)?grade='E':
+		(marks >=0 && marks<=34)?grade='F':'I';
+		
+     
+     switch(grade)
+     {
+         case 'a':
+         case 'A':
+            printf("your grade is %c",grade);
+            switch(grade)
+            {
+                case 'a':
+                case 'A':
+                    printf(".Excellent work!");
+            }
+        break;
+            
+        case 'b':
+         case 'B':
+            printf("your grade is %c.",grade);
+            switch(grade)
+            {
+                case 'b':
+                case 'B':
+                    printf("Well done!");
+            }
+        break;
+        
+         case 'c':
+         case 'C':
+            printf("your grade is %c.",grade);
+            switch(grade)
+            {
+                case 'c':
+                case 'C':  
+                    printf("Good job!");
+            }
+        break;
+        
+         case 'd':
+         case 'D':
+            printf("your grade is %c.",grade);
+            switch(grade)
+            {
+                case 'd':
+                case 'D':
+                    printf("You passed, but you could do better");
+            }
+            
+        break;
+        
+         case 'e':
+         case 'E':
+            printf("your grade is %c.",grade);
+            switch(grade)
+            {
+               case 'e':
+               case 'E':  
+                printf("you need to work harder");
+            }
+        break;
+        
+         case 'f':
+         case 'F':
+            printf("your grade is %c.",grade);
+            switch(grade)
+            {
+               case 'f':
+               case 'F': 
+                printf("sorry you failed");
+            }
+        break;
+        default:
+            printf("invalid marks");
+            
+          
+        
+     }
+     
+ }
