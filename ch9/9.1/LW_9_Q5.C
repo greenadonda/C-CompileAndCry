@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{       int y1,y2;
+	clrscr();
+	printf("enter the first year\n");
+	scanf("%d",&y1);
+	printf("enter the second year\n");
+	scanf("%d",&y2);
+	clrscr();
+	while(y1<=y2)
+	{
+		if(y1%4==0)
+		{
+			printf("%d\n\n",y1);
+		}
+		y1+=4;
+	}
+	getch();
+
+
+
+}
